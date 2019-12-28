@@ -33,6 +33,10 @@ namespace PO_v0._0001
         public int lvl;
         public string nick;
 
+        double inteligence;
+        double dexterity;
+        double strength;
+
         public Character(string nick)
         {
             this.lvl = 1;
@@ -53,15 +57,23 @@ namespace PO_v0._0001
         {
             if(character is Mage)
             {
-               
+                this.inteligence = this.inteligence + this.inteligence * 0.25;
+                this.strength = this.strength + this.strength * 0.05;
+                this.dexterity = this.dexterity + this.dexterity * 0.10;
                
             }
             else if(character is Rouge)
             {
+                this.inteligence = this.inteligence + this.inteligence * 0.10;
+                this.strength = this.strength + this.strength * 0.10;
+                this.dexterity = this.dexterity + this.dexterity * 0.30;
 
             }
             else if(character is Warrior)
             {
+                this.inteligence = this.inteligence + this.inteligence * 0.01;
+                this.strength = this.strength + this.strength * 0.40;
+                this.dexterity = this.dexterity + this.dexterity * 0.10;
 
             }
 
@@ -121,8 +133,9 @@ namespace PO_v0._0001
 
         public void create_a_monster(Character _character_enemy)
         {
-           
-            
+            this.inteligence = this.inteligence - _character_enemy.lvl * 0.2;
+            this.strength = this.strength - _character_enemy.lvl * 0.2;
+            this.strength = this.strength - _character_enemy.lvl * 0.2;
 
         }
     }
