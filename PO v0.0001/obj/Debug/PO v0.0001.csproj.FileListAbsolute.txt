@@ -1,0 +1,6 @@
+C:\Users\Crow\source\repos\PO v0.0001\PO v0.0001\bin\Debug\PO v0.0001.exe.config
+C:\Users\Crow\source\repos\PO v0.0001\PO v0.0001\bin\Debug\PO v0.0001.exe
+C:\Users\Crow\source\repos\PO v0.0001\PO v0.0001\bin\Debug\PO v0.0001.pdb
+C:\Users\Crow\source\repos\PO v0.0001\PO v0.0001\obj\Debug\PO v0.0001.csprojAssemblyReference.cache
+C:\Users\Crow\source\repos\PO v0.0001\PO v0.0001\obj\Debug\PO v0.0001.exe
+C:\Users\Crow\source\repos\PO v0.0001\PO v0.0001\obj\Debug\PO v0.0001.pdb
