@@ -46,7 +46,7 @@ namespace PO_v0._0001
 
         public void lvl_up()
         {
-            // metoda do lvlowanie(kuba to huj)
+            // metoda do lvlowanie(norbi to huj)
         }
     }
 
@@ -113,8 +113,9 @@ namespace PO_v0._0001
         static void Main(string[] args)
         {
 
-
-
+            Mapa map = new Mapa(5, 6);
+            map.show();
+            Console.ReadKey();
         }
     }
 }
