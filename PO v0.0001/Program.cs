@@ -145,7 +145,16 @@ namespace PO_v0._0001
     {
         static void Main(string[] args)
         {
+            Map mapa = new Map(30, 20);
+            mapa.generate();
+            while (true)
+            {
+                mapa.show();
+                mapa.bohater.ruch(mapa);
+                Console.Clear();
+            }
 
+            Console.ReadKey();
           
         }
     }

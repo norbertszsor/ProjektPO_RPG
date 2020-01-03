@@ -6,25 +6,18 @@ using System.Threading.Tasks;
 
 namespace PO_v0._0001
 {
-    public class Point
-    {
-        public int x;
-        public int y;
-        public Point(int x, int y)
-        {
-            this.x = x;
-            this.y = y;
-        }
-    }
-    public class MapElement : Point
+
+    public class MapElement
     {
 
         public char icon;
-        public string position;
+        public int x;
+        public int y;
 
-        public MapElement(int x, int y) : base(x, y)
+        public MapElement(int x, int y)
         {
-
+            this.x = x;
+            this.y = y;
         }
     }
     public class Grass : MapElement
@@ -32,7 +25,7 @@ namespace PO_v0._0001
 
         public Grass(int x, int y) : base(x, y)
         {
-            this.icon = '.';
+            icon = '.';
 
         }
     }
@@ -41,9 +34,16 @@ namespace PO_v0._0001
 
         public Rock(int x, int y) : base(x, y)
         {
-            this.icon = 'R';
+            icon = 'R';
         }
 
        
+    }
+    public class Node_Generatora : MapElement
+    {
+        public Node_Generatora(int x, int y) : base(x, y)
+        {
+            icon = '*';
+        }
     }
 }
