@@ -43,13 +43,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Map.cs" />
-    <Compile Include="Point.cs" />
+    <Compile Include="Items_and_backpack\Gold_Coin.cs" />
+    <Compile Include="Items_and_backpack\Item.cs" />
+    <Compile Include="Items_and_backpack\My_stash.cs" />
+    <Compile Include="Structs\Base_critical_classDemage.cs" />
+    <Compile Include="Structs\Base_magic_classDemage.cs" />
+    <Compile Include="Structs\Base_physical_classDamage.cs" />
+    <Compile Include="Characters\Character.cs" />
+    <Compile Include="Monsters\Enemy.cs" />
+    <Compile Include="Characters\Mage.cs" />
+    <Compile Include="Map_Wrzuć tu classy i pliki twojego generatora\Map.cs" />
+    <Compile Include="Map_Wrzuć tu classy i pliki twojego generatora\Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Characters\Rouge.cs" />
+    <Compile Include="Characters\Warrior.cs" />
+    <Compile Include="Adaptive_Weapons_Character\Weapon_Warrior.cs" />
+    <Compile Include="Adaptive_Weapons_Character\Weapon_Mage.cs" />
+    <Compile Include="Adaptive_Weapons_Character\Weapon_Rouge.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
