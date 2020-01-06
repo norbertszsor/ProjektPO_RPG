@@ -9,32 +9,33 @@ namespace PO_v0._0001
     public class Map
     {
         public Player bohater = new Player(0, 0);
-        public int lenght;
-        public int widht;
+        public int width;
+        public int height;
         public MapElement[,] mapa_Elementy;
         public Random rnd = new Random();
 
         public Map(int lenght, int widht)
         {
-            this.lenght = lenght;
-            this.widht = widht;
+            this.width = lenght;
+            this.height = widht;
             mapa_Elementy = new MapElement[lenght, widht];
         }
 
         public void generate()
         {
+            Console.Write("Generowanie mapy Prosze Czekać");
             //Zapełniam Mape 
-            for (int i = 0; i < this.lenght; i++)
+            for (int i = 0; i < this.width; i++)
             {
-                for (int j = 0; j < this.widht; j++)
+                for (int j = 0; j < this.height; j++)
                 {
                    mapa_Elementy[i, j] = new Grass(i, j);
                 }
             }
             //tworze nodey
-            for (int i = 0; i < this.lenght; i++)
+            for (int i = 0; i < this.width; i++)
             {
-                for (int j = 0; j < this.widht; j++)
+                for (int j = 0; j < this.height; j++)
                 {
                     var random = rnd.Next(1, 8);
                     if (!Zwroc_Sasiadow(mapa_Elementy[i,j]).Exists(e=>e is Node_Generatora))
@@ -51,9 +52,9 @@ namespace PO_v0._0001
                 }
             }
             //zamiana nodow na skały
-            for (int i = 0; i < this.lenght; i++)
+            for (int i = 0; i < this.width; i++)
             {
-                for (int j = 0; j < this.widht; j++)
+                for (int j = 0; j < this.height; j++)
                 {
                     if (mapa_Elementy[i,j] is Node_Generatora)
                     {
@@ -64,6 +65,22 @@ namespace PO_v0._0001
                     }
                 }
             }
+            //generowanie gracza i wyjscia
+            bohater.x = rnd.Next(0, width / 2);
+            bohater.y = rnd.Next(0, height);
+            var a= rnd.Next(width / 2, width);
+            var b=rnd.Next(0, height);
+            mapa_Elementy[a,b]=new Exit(a,b);
+           
+            foreach (var item in Zwroc_Sasiadow(mapa_Elementy[a, b]))
+            {
+                mapa_Elementy[item.x, item.y] = new Grass(item.x, item.y);
+            }
+            foreach (var item in Zwroc_Sasiadow(mapa_Elementy[bohater.x, bohater.y]))
+            {
+                mapa_Elementy[item.x, item.y] = new Grass(item.x, item.y);
+            }
+            Console.Clear();
         }
 
         public List<MapElement> Zwroc_Sasiadow(MapElement n)
@@ -105,13 +122,19 @@ namespace PO_v0._0001
 
         public void show()
         {
-            for (int i = 0; i < widht; i++)
+            if (mapa_Elementy[bohater.x, bohater.y] is Exit)
             {
-                for (int j = 0; j < lenght; j++)
+                generate();
+                
+            }
+
+            for (int i = 0; i < height; i++)
+            {
+                for (int j = 0; j < width; j++)
                 {
                     if (i==bohater.y&&j==bohater.x)
                     {
-                        Console.Write("@");
+                        Console.Write("☻");
                     }
                     else
                     {

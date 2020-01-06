@@ -147,8 +147,10 @@ namespace PO_v0._0001
         {
             Map mapa = new Map(30, 20);
             mapa.generate();
+            
             while (true)
             {
+                
                 mapa.show();
                 mapa.bohater.ruch(mapa);
                 Console.Clear();

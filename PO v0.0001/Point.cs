@@ -34,10 +34,33 @@ namespace PO_v0._0001
 
         public Rock(int x, int y) : base(x, y)
         {
-            icon = 'R';
+            icon = '█';
         }
+    }
 
-       
+    public class Exit : MapElement
+    {
+
+        public Exit(int x, int y) : base(x, y)
+        {
+            icon = '░';
+        }
+    }
+    public class Chest : MapElement
+    {
+
+        public Chest(int x, int y) : base(x, y)
+        {
+            icon = '☼';
+        }
+    }
+    public class Monster : MapElement
+    {
+
+        public Monster(int x, int y) : base(x, y)
+        {
+            icon = '☺';
+        }
     }
     public class Node_Generatora : MapElement
     {
