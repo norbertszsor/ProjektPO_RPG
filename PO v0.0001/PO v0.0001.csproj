@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adaptive_Weapons_Character\Weapon.cs" />
+    <Compile Include="Adaptive_Weapons_Character\Weapon_Monster.cs" />
+    <Compile Include="Fight_element_calculate_dmg.cs" />
+    <Compile Include="Fight_element_escape.cs" />
+    <Compile Include="Fight_element_return_exp.cs" />
+    <Compile Include="Fight_element_return_item.cs" />
     <Compile Include="Items_and_backpack\Gold_Coin.cs" />
     <Compile Include="Items_and_backpack\Item.cs" />
     <Compile Include="Items_and_backpack\My_stash.cs" />
@@ -65,6 +71,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Versus_Enigne\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

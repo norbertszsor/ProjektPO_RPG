@@ -1,8 +1,8 @@
 ﻿namespace PO_v0._0001
 {
-    class Weapon_Warrior : Item//test
+    class Weapon_Warrior : Weapon//test
     {
-        double adaptive_demage;
+
         public Weapon_Warrior()
         {
             this.name = "Giant_Sword";

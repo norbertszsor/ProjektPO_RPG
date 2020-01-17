@@ -6,9 +6,10 @@
         public int lvl;
         public string nick;
 
-        double inteligence;
-        double dexterity;
-        double strength;
+        public double hit_points;
+        public double inteligence;
+        public double dexterity;
+        public double strength;
 
         public Character(string nick)
         {
@@ -33,6 +34,7 @@
                 this.inteligence = this.inteligence + this.inteligence * 0.25;
                 this.strength = this.strength + this.strength * 0.05;
                 this.dexterity = this.dexterity + this.dexterity * 0.10;
+                this.hit_points = this.hit_points + this.strength * 0.20;
                
             }
             else if(character is Rouge)
@@ -40,6 +42,7 @@
                 this.inteligence = this.inteligence + this.inteligence * 0.10;
                 this.strength = this.strength + this.strength * 0.10;
                 this.dexterity = this.dexterity + this.dexterity * 0.30;
+                this.hit_points = this.hit_points + this.strength * 0.30;
 
             }
             else if(character is Warrior)
@@ -47,6 +50,7 @@
                 this.inteligence = this.inteligence + this.inteligence * 0.01;
                 this.strength = this.strength + this.strength * 0.40;
                 this.dexterity = this.dexterity + this.dexterity * 0.10;
+                this.hit_points = this.hit_points + this.strength * 0.60;
 
             }
 

@@ -2,15 +2,13 @@
 {
     class Warrior : Character
     {
-        double inteligence;
-        double dexterity;
-        double strength;
-
+     
         public Warrior(string nick) : base(nick)
         {
             this.dexterity = 4;
-            this.inteligence = 0.2;
+            this.inteligence = 2;
             this.strength = 15;
+            this.hit_points = 100;
         }
     }
 }

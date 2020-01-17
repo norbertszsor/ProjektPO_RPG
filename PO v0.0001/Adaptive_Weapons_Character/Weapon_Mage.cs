@@ -1,9 +1,7 @@
 ﻿namespace PO_v0._0001
 {
-    class Weapon_Mage : Item // test
+    class Weapon_Mage : Weapon // test
     {
-        double adaptive_demage;
-
         public Weapon_Mage()
         {
             this.name = "Dragon_Staff";

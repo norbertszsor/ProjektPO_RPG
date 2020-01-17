@@ -2,15 +2,16 @@
 {
     class Mage : Character
     {
-        double inteligence;
-        double dexterity;
-        double strength;
-
+    
         public Mage(string nick) : base(nick)
         {
             this.dexterity = 2;
             this.inteligence = 8;
             this.strength = 1;
+            this.hit_points = 40;
+                       
         }
+
+   
     }
 }

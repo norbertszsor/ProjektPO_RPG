@@ -4,30 +4,28 @@ namespace PO_v0._0001
 {
     class Enemy : Character
     {
-        double inteligence;
-        double dexterity;
-        double strength;
-
+        public Weapon nowy;
         public Enemy(string nick) : base(nick)
         {
+            this.nowy = new Weapon_Monster();
         }
     
 
         public void create_a_monster(Character _character_enemy)
         {
-            Random rnd = new Random();
+
+            // tu bedzie metoda wyliczania poziomu zależnie od poziomu mapy
+
 
             this.nick = "Monster_test";
 
-            this.lvl = _character_enemy.lvl - rnd.Next(1, 10);
+            this.lvl = 1;
 
-            this.inteligence = this.inteligence - _character_enemy.lvl * 0.2;
+            this.strength = 1;
 
-            this.strength = this.strength - _character_enemy.lvl * 0.2;
+            this.expirience = 120;
 
-            this.dexterity = this.dexterity - _character_enemy.lvl * 0.2;
-
-            this.expirience = _character_enemy.expirience / 4;
+            this.hit_points = 60;
 
         }
     }

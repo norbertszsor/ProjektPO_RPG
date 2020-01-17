@@ -1,8 +1,7 @@
 ﻿namespace PO_v0._0001
 {
-    class Weapon_Rouge : Item//test
+    class Weapon_Rouge : Weapon//test
     {
-        double adaptive_demage;
         public Weapon_Rouge()
         {
             this.name = "Sneaky_Dagger";
