@@ -54,9 +54,7 @@ namespace PO_v0._0001
 
             Weapon player_weapon = new Weapon_Warrior();
             
-            Enemy cave_rat = new Enemy("Cave Rat");
-
-            cave_rat.create_a_monster(player);
+            Enemy cave_rat = new Enemy("Cave Rat",1);
 
             menu_test.beta_fight_show(player, cave_rat, player_weapon,cave_rat.nowy);
 
