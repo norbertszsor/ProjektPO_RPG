@@ -6,7 +6,7 @@
         double calculated;
         public double element_dmg_str(Character _character,double unique_skill,Weapon weapon)
         {
-            this.recrived_dmg = 0;
+            this.calculated = 0;
 
 
             calculated = _character.lvl * unique_skill * weapon.adaptive_demage;
