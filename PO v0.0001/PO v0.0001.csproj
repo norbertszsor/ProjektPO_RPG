@@ -43,12 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Boss_room.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="Enemy.cs" />
     <Compile Include="Gra.cs" />
+    <Compile Include="Level.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sklepki.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

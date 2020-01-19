@@ -56,7 +56,7 @@ namespace PO_v0._0001
     }
     public class Monster : MapElement
     {
-
+        public Enemy monster = new Enemy("ziomek");
         public Monster(int x, int y) : base(x, y)
         {
             icon = '☺';
@@ -67,6 +67,13 @@ namespace PO_v0._0001
         public Node_Generatora(int x, int y) : base(x, y)
         {
             icon = '*';
+        }
+    }
+    public class NPC : MapElement
+    {
+        public NPC(int x, int y) : base(x, y)
+        {
+            icon = '$';
         }
     }
 }

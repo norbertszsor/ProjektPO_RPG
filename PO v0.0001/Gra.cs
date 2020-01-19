@@ -12,7 +12,7 @@ namespace PO_v0._0001
         Map Mapa = new Map(5, 6);
         public void Generuj()
         {
-            Mapa.generate();
+            Mapa.generuj();
         }
         public void Wyswietl()
         {
