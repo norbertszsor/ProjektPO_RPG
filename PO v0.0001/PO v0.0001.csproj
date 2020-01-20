@@ -43,13 +43,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Map.cs" />
-    <Compile Include="Point.cs" />
+    <Compile Include="A_Weapons\Weapon.cs" />
+    <Compile Include="A_Weapons\Weapon_Monster.cs" />
+    <Compile Include="Monsters\Enemy_Boss.cs" />
+    <Compile Include="Show_statystyki\lvl_up.cs" />
+    <Compile Include="Show_statystyki\Statystki.cs" />
+    <Compile Include="Versus_Enigne\Versus_calculate.cs" />
+    <Compile Include="Versus_Enigne\Versus_enemy.cs" />
+    <Compile Include="Versus_Enigne\Versus_escape.cs" />
+    <Compile Include="Versus_Enigne\Versus_exp_drop.cs" />
+    <Compile Include="Versus_Enigne\Versus_items_drop.cs" />
+    <Compile Include="Items_and_backpack\Gold_Coin.cs" />
+    <Compile Include="Items_and_backpack\Item.cs" />
+    <Compile Include="Items_and_backpack\My_stash.cs" />
+    <Compile Include="Characters\Character.cs" />
+    <Compile Include="Monsters\Enemy.cs" />
+    <Compile Include="Characters\Mage.cs" />
+    <Compile Include="Mapa\Map.cs" />
+    <Compile Include="Mapa\Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Characters\Rouge.cs" />
+    <Compile Include="Characters\Warrior.cs" />
+    <Compile Include="A_Weapons\Weapon_Warrior.cs" />
+    <Compile Include="A_Weapons\Weapon_Mage.cs" />
+    <Compile Include="A_Weapons\Weapon_Rouge.cs" />
+    <Compile Include="Versus_Enigne\Versus_Show.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
