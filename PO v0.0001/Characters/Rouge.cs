@@ -6,10 +6,11 @@
 
         public Rouge(string nick) : base(nick)
         {
-            this.dexterity = 8;
-            this.inteligence = 4;
-            this.strength = 4;
+            this.dexterity = 10;
+            this.inteligence = 5;
+            this.strength = 5;
             this.hit_points = 60;
+            this.mana = 100;
         }
     }
 }

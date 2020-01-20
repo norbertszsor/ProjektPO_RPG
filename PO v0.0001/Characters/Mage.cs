@@ -5,10 +5,11 @@
     
         public Mage(string nick) : base(nick)
         {
-            this.dexterity = 2;
-            this.inteligence = 8;
-            this.strength = 1;
+            this.dexterity = 5;
+            this.inteligence = 10;
+            this.strength = 5;
             this.hit_points = 40;
+            this.mana = 180;
                        
         }
 
