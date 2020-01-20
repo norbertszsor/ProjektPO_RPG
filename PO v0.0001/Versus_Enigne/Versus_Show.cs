@@ -22,24 +22,6 @@ namespace PO_v0._0001
                 Console.WriteLine(Versus_calculate.attack(player, Versus_enemy.element_monster(_enemy)));//tu bedzie poziom mapy
            
             }
-            void cheker()
-            {
-                if (player.hit_points <= 0)
-                {
-                    Console.WriteLine("Jesteś martwy");
-                    //Metoda ekranu pożegnalnego
-                    Thread.Sleep(2000);
-                    Environment.Exit(0);
-                    
-                }
-                else if (_enemy.hit_points <= 0)
-                {
-                    Console.WriteLine(_enemy.nick + ": jest martwy");
-                    Versus_exp_dorp.gain_exp(player, _enemy);
-                    //Metoda powrotu do mapy i otrzymania expa;
-                   
-                }
-            }
           
 
             int marker=1;
@@ -100,10 +82,38 @@ namespace PO_v0._0001
                         if(marker == 1)
                         {
                             attack_player();
-                            cheker();
+                            if (player.hit_points <= 0)
+                            {
+                                Console.WriteLine("Jesteś martwy");
+                                //Metoda ekranu pożegnalnego
+                                Thread.Sleep(2000);
+                                Environment.Exit(0);
+                                return;
+                            }
+                            else if (_enemy.hit_points <= 0)
+                            {
+                                Console.WriteLine(_enemy.nick + ": jest martwy");
+                                Versus_exp_dorp.gain_exp(player, _enemy);
+                                return;
+
+                            }
                             Thread.Sleep(1000);                          
                             atak_monster();
-                            cheker();
+                            if (player.hit_points <= 0)
+                            {
+                                Console.WriteLine("Jesteś martwy");
+                                //Metoda ekranu pożegnalnego
+                                Thread.Sleep(2000);
+                                Environment.Exit(0);
+                                return;
+                            }
+                            else if (_enemy.hit_points <= 0)
+                            {
+                                Console.WriteLine(_enemy.nick + ": jest martwy");
+                                Versus_exp_dorp.gain_exp(player, _enemy);
+                                return;
+
+                            }
                             Thread.Sleep(1000);
                             graficzna_reprezentacja();
 
@@ -112,10 +122,38 @@ namespace PO_v0._0001
                             if(player.mana>49)
                             {
                                 attack2_player();
-                                cheker();
+                                if (player.hit_points <= 0)
+                                {
+                                    Console.WriteLine("Jesteś martwy");
+                                    //Metoda ekranu pożegnalnego
+                                    Thread.Sleep(2000);
+                                    Environment.Exit(0);
+                                    return;
+                                }
+                                else if (_enemy.hit_points <= 0)
+                                {
+                                    Console.WriteLine(_enemy.nick + ": jest martwy");
+                                    Versus_exp_dorp.gain_exp(player, _enemy);
+                                    return;
+
+                                }
                                 Thread.Sleep(1000);
                                 atak_monster();
-                                cheker();
+                                if (player.hit_points <= 0)
+                                {
+                                    Console.WriteLine("Jesteś martwy");
+                                    //Metoda ekranu pożegnalnego
+                                    Thread.Sleep(2000);
+                                    Environment.Exit(0);
+                                    return;
+                                }
+                                else if (_enemy.hit_points <= 0)
+                                {
+                                    Console.WriteLine(_enemy.nick + ": jest martwy");
+                                    Versus_exp_dorp.gain_exp(player, _enemy);
+                                    return;
+
+                                }
                                 Thread.Sleep(1000);
                                 graficzna_reprezentacja();
                             }
