@@ -76,7 +76,7 @@ namespace PO_v0._0001
             else if (_character is Rouge)
             {
                 calculated = _character.dexterity * 2;
-                Console.WriteLine("Cios pod żebra");
+                Console.Write("Cios pod żebra: ");
           
             }
 
