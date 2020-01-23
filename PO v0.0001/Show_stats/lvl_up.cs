@@ -1,4 +1,8 @@
-﻿namespace PO_v0._0001
+﻿using System;
+using System.Threading;
+
+
+namespace PO_v0._0001
 {
     static class lvl_up
     {
@@ -17,6 +21,8 @@
                     character.dexterity = character.dexterity+ character.dexterity * 0.20;
                     character.max_hp = character.max_hp + character.max_hp * 0.20;
                     character.max_mp = character.max_mp + character.max_mp * 0.40;
+                    Thread.Sleep(1500);
+                    Console.Write("Gratulacje, awansowałeś na poziom |"+character.lvl+"|" );
 
                 }
                 else if(character is Warrior)
@@ -26,6 +32,8 @@
                     character.dexterity = character.dexterity  +character.dexterity * 0.20;
                     character.max_hp = character.max_hp + character.max_hp * 0.40;
                     character.max_mp = character.max_mp + character.max_mp * 0.20;
+                    Thread.Sleep(1500);
+                    Console.Write("Gratulacje, awansowałeś na poziom |" + character.lvl + "|");
 
                 }
                 else if(character is Rouge)
@@ -35,6 +43,8 @@
                     character.dexterity = character.dexterity + character.dexterity* 0.40;
                     character.max_hp = character.max_hp + character.max_hp * 0.30;
                     character.max_mp = character.max_mp + character.max_mp* 0.30;
+                    Thread.Sleep(1500);
+                    Console.Write("Gratulacje, awansowałeś na poziom |" + character.lvl + "|");
                 }
                 character.current_hp = character.max_hp;
                 character.current_mp = character.max_mp;

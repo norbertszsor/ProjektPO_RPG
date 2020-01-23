@@ -299,7 +299,7 @@ namespace PO_v0._0001
                     {
                         if (i == bohater.y && j == bohater.x)
                         {
-                            Console.Write("P");
+                            Console.Write("☻");
                         }
                         else
                         {

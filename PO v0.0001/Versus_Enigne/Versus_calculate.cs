@@ -67,7 +67,7 @@ namespace PO_v0._0001
        
         public static double element_special(Character _character)
         {
-            //klasa do wyliczania ataku specjalnego, tzw czaru
+            //metoda do wyliczania ataku specjalnego, tzw czaru
             double calculated = 0;
             double tmp_seed;
             Random rnd = new Random();
@@ -92,17 +92,18 @@ namespace PO_v0._0001
                 Console.Write("Cios pod żebra: ");
           
             }
-            if(_character.current_mp>50)
+            if(_character.current_mp>=50)
             {
                 _character.current_mp = _character.current_mp - 50;
+                return calculated;
             }
             else
             {
-                Console.WriteLine("Za mało many");
+                return 0;
             }
+
+
             
-            calculated = calculated * tmp_seed;
-            return calculated;
         }
 
         public static string attack(Character target, double attack)
@@ -110,10 +111,20 @@ namespace PO_v0._0001
             //klasa która służy do wyświatlania ataku i zabierania życia przeciwnikowi
             double recrived_dmg;
 
-            recrived_dmg = attack;
-            target.current_hp = target.current_hp - recrived_dmg;
+            if(attack == 0)
+            {
+                return "Za mało many";
 
-            return target.nick + " otrzymał " + recrived_dmg + " obrazen";
+            }
+            else
+            {
+                recrived_dmg = attack;
+                target.current_hp = target.current_hp - recrived_dmg;
+
+
+                return target.nick + " otrzymał " + String.Format("{0:0.0}", recrived_dmg) + " obrazen";
+            }
+          
         }
 
    
