@@ -10,33 +10,27 @@ namespace PO_v0._0001
     {
         static void Main(string[] args)
         {
-            Character Gandalf = new Rouge("Gandalf");
 
-            Enemy test = new Enemy("test_monster", 2);
-           
-            Statystki.show_stat(Gandalf);//test statystyk
-            Statystki.show_spec_stat(Gandalf);
+            /*Map mapa = new Map(30, 20, new Rouge("Kuba"));
+            mapa.generuj();
 
-            lvl_up.lvluj(Gandalf, 200);// test lvlowania
-            Statystki.show_spec_stat(Gandalf);
-            Statystki.show_stat(Gandalf);// test statystyk po lvlowaniu
-            
-            
-            lvl_up.lvluj(Gandalf, 599);
-            Statystki.show_spec_stat(Gandalf);
-            Statystki.show_stat(Gandalf);// test statystyk po lvlowaniu
+            while (true)
+            {
 
+                mapa.show();
+                Statystki.show_stat(mapa.bohater.postac);
+                Statystki.show_spec_stat(mapa.bohater.postac);
+                mapa.ruch();
+                
+                Console.Clear();
+            }*/
 
 
-
-
-            Versus_Show.test_show(Gandalf, test);//test walki
-
-
-
+            Versus_Menu.Menu();
 
 
             Console.ReadKey();
+
         }
     }
 }
