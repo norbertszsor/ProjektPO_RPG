@@ -9,11 +9,18 @@ namespace PO_v0._0001
         public static double element_regular(Character _character)
         {
             double calculated = 0;
+
             double tmp_seed;
+
             Random rnd = new Random();
+
             tmp_seed = rnd.Next(6, 12);
+
             int critical = rnd.Next(1, 4);
+
             tmp_seed = tmp_seed / 10;
+
+
             if (_character is Mage)
             {  
                 calculated = _character.inteligence;

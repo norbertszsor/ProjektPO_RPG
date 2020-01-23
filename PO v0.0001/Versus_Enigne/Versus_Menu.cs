@@ -279,7 +279,7 @@ namespace PO_v0._0001
                 Console.WriteLine("|  pustkę w podziemiach, twoje życie było nudne i pełne pracy   |");
                 Console.WriteLine("|  w polu, teraz nadzszedł czas na twoją przygodę, podchodzisz  |");
                 Console.WriteLine("|  do dziwnych wrót które wydają się być ciepłe w dotyku        |");
-                Console.WriteLine("|  nagle słyszysz dzwięk, który rozlewa się po twoim wnętrzu    |\n");
+                Console.WriteLine("|  nagle słyszysz dzwięk, który rozlewa się po twoim wnętrzu    |");
                 Console.WriteLine("|                                                               |");
                 Console.WriteLine("|                   >WYBIERZ SWOJĄ KLASĘ<                       |");
                 Console.WriteLine("+===============================================================|");
