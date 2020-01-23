@@ -14,7 +14,7 @@ namespace PO_v0._0001
         public int height;
         public MapElement[,] mapa_Elementy;
         public Random rnd = new Random();
-
+        public string message;
         public Map(int lenght, int widht,Character c)
         {
             this.width = lenght;
@@ -36,7 +36,7 @@ namespace PO_v0._0001
                 bohater.y = 1;
                 Console.Clear();
             }
-            else if (poziom%5==0)
+            else if (poziom%4==0)
             {
                 var Boss = new Boss_room();
                 Boss.generuj();
@@ -246,7 +246,11 @@ namespace PO_v0._0001
 
 
 
-
+        public void showEvent()
+        {
+            Console.WriteLine(message);
+            message = null;
+        }
 
         public void show()
         {
@@ -258,7 +262,9 @@ namespace PO_v0._0001
                     break;
                 case Chest e:
                     mapa_Elementy[bohater.x, bohater.y] = new Grass(0, 0);
-                    //daj golda(int)
+                    var a = rnd.Next(10 * poziom, 50 * poziom);
+                    bohater.postac.gold.value += a;
+                    message = "Znalazłeś " + a + " Złota";
                     break;
                 case Monster m:
                     Versus_Show.test_show(bohater.postac, m.monster);
@@ -267,6 +273,8 @@ namespace PO_v0._0001
                     {
                       mapa_Elementy[bohater.x, bohater.y] = new Grass(0, 0);
                     }
+                    
+                    message = "Dostałeś " + 20 * poziom + " Doświadczenia";
                     Console.Clear();
                     break;
                 case MonsterBoss b:

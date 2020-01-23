@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace PO_v0._0001
@@ -38,8 +39,8 @@ namespace PO_v0._0001
                     }
                     Console.WriteLine();
                 }
-                Console.WriteLine("+=================================+");
-                Console.WriteLine("    Ilość złota: ");
+                
+                Statystki.show_stat(P.postac);
 
                 var a= Console.ReadKey();
                 switch (a.Key)
@@ -61,19 +62,68 @@ namespace PO_v0._0001
                         switch (strzałka)
                         {
                             case 0:
+                                if (P.postac.gold.value >= 50)
+                                {
+                                    P.postac.gold.value -= 50;
+                                    P.postac.current_hp += 50;
+                                    if (P.postac.current_hp> P.postac.max_hp)
+                                    {
+                                        P.postac.current_hp = P.postac.max_hp;
+                                    }
+                                }
+                                else
+                                {
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("ZA MAŁO ZŁOTA");
+                                }
                                 break;
-                                //odzyskaj życie
                             case 1:
-                                //zwieksz hp
+                                if (P.postac.gold.value >= 100)
+                                {
+                                    P.postac.gold.value -= 100;
+                                    P.postac.max_hp += 15;
+                                }
+                                else
+                                {
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("ZA MAŁO ZŁOTA");
+                                }
                                 break;
                             case 2:
-                                P.postac.strength += 5;
-                               break;
+                                if (P.postac.gold.value >= 100)
+                                {
+                                    P.postac.gold.value -= 100;
+                                    P.postac.strength += 5;
+                                }
+                                else
+                                {
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("ZA MAŁO ZŁOTA");
+                                }
+                                break;
                             case 3:
-                                P.postac.dexterity += 5;
+                                if (P.postac.gold.value >= 100)
+                                {
+                                    P.postac.gold.value -= 100;
+                                    P.postac.dexterity += 5;
+                                }
+                                else
+                                {
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("ZA MAŁO ZŁOTA");
+                                }
                                 break;
                             case 4:
-                                P.postac.inteligence += 5;
+                                if (P.postac.gold.value >= 100)
+                                {
+                                    P.postac.gold.value -= 100;
+                                    P.postac.inteligence += 5;
+                                }
+                                else
+                                {
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("ZA MAŁO ZŁOTA");
+                                }
                                 break;
                             case 5:
                                 Console.Clear();

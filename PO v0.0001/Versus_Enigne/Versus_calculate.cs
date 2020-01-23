@@ -80,8 +80,15 @@ namespace PO_v0._0001
                 Console.Write("Cios pod żebra: ");
           
             }
-
-            _character.current_mp = _character.current_mp - 50;
+            if(_character.current_mp>50)
+            {
+                _character.current_mp = _character.current_mp - 50;
+            }
+            else
+            {
+                Console.WriteLine("Za mało many");
+            }
+            
             calculated = calculated * tmp_seed;
             return calculated;
         }

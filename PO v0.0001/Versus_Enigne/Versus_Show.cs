@@ -36,16 +36,19 @@ namespace PO_v0._0001
                 {
                     Console.Clear();
                     Console.WriteLine(ramka + opjca1 + ramka2) ;
+                    Statystki.show_stat_combat(player);
                 }
                 else if(marker == 2)
                 {
                     Console.Clear();
                     Console.WriteLine(ramka + opcja2 + ramka2);
+                    Statystki.show_stat_combat(player);
                 }
                 else if(marker == 3)
                 {
                     Console.Clear();
                     Console.WriteLine(ramka + opcja3 + ramka2);
+                    Statystki.show_stat_combat(player);
                 }
             }
 
@@ -85,7 +88,6 @@ namespace PO_v0._0001
                             if (player.current_hp <= 0)
                             {
                                 Console.WriteLine("Jesteś martwy");
-                                //Metoda ekranu pożegnalnego
                                 Thread.Sleep(2000);
                                 Environment.Exit(0);
                                 return;
@@ -94,6 +96,7 @@ namespace PO_v0._0001
                             {
                                 Console.WriteLine(_enemy.nick + ": jest martwy");
                                 Versus_exp_dorp.gain_exp(player, _enemy);
+                                Versus_items_drop.item_drop(player, _enemy);
                                 return;
 
                             }
@@ -102,7 +105,6 @@ namespace PO_v0._0001
                             if (player.current_hp <= 0)
                             {
                                 Console.WriteLine("Jesteś martwy");
-                                //Metoda ekranu pożegnalnego
                                 Thread.Sleep(2000);
                                 Environment.Exit(0);
                                 return;
@@ -111,6 +113,7 @@ namespace PO_v0._0001
                             {
                                 Console.WriteLine(_enemy.nick + ": jest martwy");
                                 Versus_exp_dorp.gain_exp(player, _enemy);
+                                Versus_items_drop.item_drop(player, _enemy);
                                 return;
 
                             }
@@ -125,7 +128,6 @@ namespace PO_v0._0001
                                 if (player.current_hp <= 0)
                                 {
                                     Console.WriteLine("Jesteś martwy");
-                                    //Metoda ekranu pożegnalnego
                                     Thread.Sleep(2000);
                                     Environment.Exit(0);
                                     return;
@@ -134,6 +136,7 @@ namespace PO_v0._0001
                                 {
                                     Console.WriteLine(_enemy.nick + ": jest martwy");
                                     Versus_exp_dorp.gain_exp(player, _enemy);
+                                    Versus_items_drop.item_drop(player, _enemy);
                                     return;
 
                                 }
@@ -142,7 +145,6 @@ namespace PO_v0._0001
                                 if (player.current_hp <= 0)
                                 {
                                     Console.WriteLine("Jesteś martwy");
-                                    //Metoda ekranu pożegnalnego
                                     Thread.Sleep(2000);
                                     Environment.Exit(0);
                                     return;
@@ -151,6 +153,7 @@ namespace PO_v0._0001
                                 {
                                     Console.WriteLine(_enemy.nick + ": jest martwy");
                                     Versus_exp_dorp.gain_exp(player, _enemy);
+                                    Versus_items_drop.item_drop(player, _enemy);
                                     return;
 
                                 }

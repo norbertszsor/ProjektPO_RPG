@@ -51,8 +51,8 @@
     <Compile Include="Monsters\Enemy_Boss.cs" />
     <Compile Include="Mapa\Player.cs" />
     <Compile Include="Mapa\Point.cs" />
-    <Compile Include="Show_statystyki\lvl_up.cs" />
-    <Compile Include="Show_statystyki\Statystki.cs" />
+    <Compile Include="Show_stats\lvl_up.cs" />
+    <Compile Include="Show_stats\Statystki.cs" />
     <Compile Include="Mapa\sklepikarz.cs" />
     <Compile Include="Mapa\sklepki.cs" />
     <Compile Include="Versus_Enigne\Versus_calculate.cs" />

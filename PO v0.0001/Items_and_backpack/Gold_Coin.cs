@@ -5,7 +5,7 @@
         public double value;
         public Gold_Coin()
         {
-            this.name = "gold";
+            this.name = "Złoto";
             this.value = 1;
         }
     }

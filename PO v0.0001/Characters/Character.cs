@@ -7,7 +7,7 @@
         public string nick;
 
 
-        public Gold_Coin gold;
+        public Gold_Coin gold = new Gold_Coin();
         public double current_hp;
         public double max_hp;
         public double inteligence;

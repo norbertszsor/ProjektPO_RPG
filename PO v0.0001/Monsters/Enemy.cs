@@ -9,9 +9,9 @@ namespace PO_v0._0001
 
             this.nick = "Slime";
 
-            this.expirience = 30*poziom_mapy;
+            this.expirience = 20*poziom_mapy;
 
-            this.current_hp = 30*poziom_mapy;
+            this.current_hp = 20*poziom_mapy;
 
             this.gold.value = 5 * poziom_mapy;
         }

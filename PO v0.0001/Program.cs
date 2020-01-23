@@ -11,25 +11,29 @@ namespace PO_v0._0001
         static void Main(string[] args)
         {
 
-            /*Map mapa = new Map(30, 20, new Rouge("Kuba"));
+
+
+
+
+            Map mapa = new Map(30, 15, Versus_Menu.Menu());
             mapa.generuj();
 
             while (true)
             {
 
                 mapa.show();
-                Statystki.show_stat(mapa.bohater.postac);
                 Statystki.show_spec_stat(mapa.bohater.postac);
+                mapa.showEvent();
                 mapa.ruch();
                 
                 Console.Clear();
-            }*/
+            }
 
 
-            Versus_Menu.Menu();
+           
 
 
-            Console.ReadKey();
+       
 
         }
     }
