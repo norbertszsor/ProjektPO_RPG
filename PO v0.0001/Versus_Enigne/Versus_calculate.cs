@@ -21,7 +21,7 @@ namespace PO_v0._0001
             }
             else if(_character is Warrior)
             {
-                if (_character.hit_points< _character.hit_points*0.3)
+                if (_character.current_hp< _character.current_hp*0.3)
                 {
                     calculated = _character.strength;
                     calculated = calculated * 2;
@@ -49,7 +49,7 @@ namespace PO_v0._0001
             }
 
 
-            calculated = calculated * tmp_seed+(_character.hit_points*0.1);
+            calculated = calculated * tmp_seed+(_character.current_hp*0.1);
             return calculated;
         }
 
@@ -57,9 +57,10 @@ namespace PO_v0._0001
         public static double element_special(Character _character)
         {
             double calculated = 0;
-            int tmp_seed;
+            double tmp_seed;
             Random rnd = new Random();
-            tmp_seed = rnd.Next(1, 10);
+            tmp_seed = rnd.Next(10, 16);
+            tmp_seed = tmp_seed / 10;
 
             if (_character is Mage)
             {
@@ -80,7 +81,7 @@ namespace PO_v0._0001
           
             }
 
-            _character.mana = _character.mana - 50;
+            _character.current_mp = _character.current_mp - 50;
             calculated = calculated * tmp_seed;
             return calculated;
         }
@@ -90,7 +91,7 @@ namespace PO_v0._0001
             double recrived_dmg;
 
             recrived_dmg = attack;
-            target.hit_points = target.hit_points - recrived_dmg;
+            target.current_hp = target.current_hp - recrived_dmg;
 
             return target.nick + " otrzymał " + recrived_dmg + " obrazen";
         }

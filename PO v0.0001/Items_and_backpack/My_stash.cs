@@ -2,7 +2,7 @@
 
 namespace PO_v0._0001
 {
-    class My_stash//ekwipunek
+    public class My_stash//ekwipunek
     {
         List<Item> _backpack;
 

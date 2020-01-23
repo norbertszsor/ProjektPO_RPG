@@ -5,7 +5,7 @@
         public static double element_monster(Character enemy)
         {
             double calculated = 0;
-            calculated = enemy.hit_points * 0.15;
+            calculated = enemy.current_hp * 0.15;
             return calculated;
         }
 

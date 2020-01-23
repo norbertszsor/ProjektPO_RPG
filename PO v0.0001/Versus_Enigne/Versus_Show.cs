@@ -25,11 +25,11 @@ namespace PO_v0._0001
           
 
             int marker=1;
-            string ramka = "=====================================\n";
+            string ramka = "+===================================+\n";
             string opjca1= "| >ATAK<  ATAK SPECJALNY   UCIEKAJ  |\n";
             string opcja2= "|  ATAK  >ATAK SPECJALNY<  UCIEKAJ  |\n";
             string opcja3 ="|  ATAK   ATAK SPECJALNY  >UCIEKAJ< |\n";
-            string ramka2 ="=====================================\n";
+            string ramka2 ="+===================================+\n";
             void graficzna_reprezentacja()
             {
                 if(marker==1)
@@ -82,7 +82,7 @@ namespace PO_v0._0001
                         if(marker == 1)
                         {
                             attack_player();
-                            if (player.hit_points <= 0)
+                            if (player.current_hp <= 0)
                             {
                                 Console.WriteLine("Jesteś martwy");
                                 //Metoda ekranu pożegnalnego
@@ -90,7 +90,7 @@ namespace PO_v0._0001
                                 Environment.Exit(0);
                                 return;
                             }
-                            else if (_enemy.hit_points <= 0)
+                            else if (_enemy.current_hp <= 0)
                             {
                                 Console.WriteLine(_enemy.nick + ": jest martwy");
                                 Versus_exp_dorp.gain_exp(player, _enemy);
@@ -99,7 +99,7 @@ namespace PO_v0._0001
                             }
                             Thread.Sleep(1000);                          
                             atak_monster();
-                            if (player.hit_points <= 0)
+                            if (player.current_hp <= 0)
                             {
                                 Console.WriteLine("Jesteś martwy");
                                 //Metoda ekranu pożegnalnego
@@ -107,7 +107,7 @@ namespace PO_v0._0001
                                 Environment.Exit(0);
                                 return;
                             }
-                            else if (_enemy.hit_points <= 0)
+                            else if (_enemy.current_hp <= 0)
                             {
                                 Console.WriteLine(_enemy.nick + ": jest martwy");
                                 Versus_exp_dorp.gain_exp(player, _enemy);
@@ -119,10 +119,10 @@ namespace PO_v0._0001
 
                         }else if(marker == 2)
                         {
-                            if(player.mana>49)
+                            if(player.max_mp>49)
                             {
                                 attack2_player();
-                                if (player.hit_points <= 0)
+                                if (player.current_hp <= 0)
                                 {
                                     Console.WriteLine("Jesteś martwy");
                                     //Metoda ekranu pożegnalnego
@@ -130,7 +130,7 @@ namespace PO_v0._0001
                                     Environment.Exit(0);
                                     return;
                                 }
-                                else if (_enemy.hit_points <= 0)
+                                else if (_enemy.current_hp <= 0)
                                 {
                                     Console.WriteLine(_enemy.nick + ": jest martwy");
                                     Versus_exp_dorp.gain_exp(player, _enemy);
@@ -139,7 +139,7 @@ namespace PO_v0._0001
                                 }
                                 Thread.Sleep(1000);
                                 atak_monster();
-                                if (player.hit_points <= 0)
+                                if (player.current_hp <= 0)
                                 {
                                     Console.WriteLine("Jesteś martwy");
                                     //Metoda ekranu pożegnalnego
@@ -147,7 +147,7 @@ namespace PO_v0._0001
                                     Environment.Exit(0);
                                     return;
                                 }
-                                else if (_enemy.hit_points <= 0)
+                                else if (_enemy.current_hp <= 0)
                                 {
                                     Console.WriteLine(_enemy.nick + ": jest martwy");
                                     Versus_exp_dorp.gain_exp(player, _enemy);
@@ -178,7 +178,7 @@ namespace PO_v0._0001
                                 Console.Clear();
                                 Console.WriteLine("Ucieczka zakończona powodzeniem");
                                 Thread.Sleep(1000);
-                                //Miejsce na wywolanie metody show mapa
+                                return;
                                 
                             }
                             else

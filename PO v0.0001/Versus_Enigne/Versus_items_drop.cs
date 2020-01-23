@@ -2,6 +2,6 @@
 {
     class Versus_items_drop
     {
-        //tu cos bedzie odnosnie mechaniki zdobywania expa;
+        //mechanika oddawania przedmiotów
     }
 }

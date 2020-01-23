@@ -2,16 +2,18 @@
 
 namespace PO_v0._0001
 {
-    class Enemy : Character
+    public class Enemy : Character
     {
         public Enemy(string nick,int poziom_mapy) : base(nick)
         {
 
-            this.nick = "Awilod";
+            this.nick = "Slime";
 
             this.expirience = 30*poziom_mapy;
 
-            this.hit_points = 30*poziom_mapy;
+            this.current_hp = 30*poziom_mapy;
+
+            this.gold.value = 5 * poziom_mapy;
         }
         
     

@@ -11,7 +11,7 @@ namespace PO_v0._0001
             Random rnd = new Random();
             int dice = rnd.Next(1, 7);
             
-            if (dice >= 3)
+            if (dice == 3)
             {
                 return 1;
             }

@@ -1,6 +1,6 @@
 ﻿namespace PO_v0._0001
 {
-    class Rouge : Character
+    public class Rouge : Character
     {
        
 
@@ -9,8 +9,10 @@
             this.dexterity = 10;
             this.inteligence = 5;
             this.strength = 5;
-            this.hit_points = 60;
-            this.mana = 100;
+            this.max_hp = 60;
+            this.current_hp = 60;
+            this.max_mp = 100;
+            this.current_mp = 100;
         }
     }
 }
