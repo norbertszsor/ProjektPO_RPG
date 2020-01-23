@@ -4,10 +4,12 @@ namespace PO_v0._0001
 {
     static class Versus_calculate
     {
+        //metody obliczające wartość ataku
        
         
         public static double element_regular(Character _character)
         {
+            //metoda oblicz wartość ataku dla ataku podstawowego
             double calculated = 0;
 
             double tmp_seed;
@@ -28,6 +30,7 @@ namespace PO_v0._0001
             }
             else if(_character is Warrior)
             {
+                //wojownik wpada w szał jeżeli osiągnie mniej niż 30% zdrowia
                 if (_character.current_hp< _character.current_hp*0.3)
                 {
                     calculated = _character.strength;
@@ -42,6 +45,7 @@ namespace PO_v0._0001
             }
             else if(_character is Rouge)
             {
+                //łowca ma szanse 1/4 na zadanie ataku krytycznego
 
                 if(critical == 1)
                 {
@@ -63,6 +67,7 @@ namespace PO_v0._0001
        
         public static double element_special(Character _character)
         {
+            //klasa do wyliczania ataku specjalnego, tzw czaru
             double calculated = 0;
             double tmp_seed;
             Random rnd = new Random();
@@ -102,6 +107,7 @@ namespace PO_v0._0001
 
         public static string attack(Character target, double attack)
         {
+            //klasa która służy do wyświatlania ataku i zabierania życia przeciwnikowi
             double recrived_dmg;
 
             recrived_dmg = attack;

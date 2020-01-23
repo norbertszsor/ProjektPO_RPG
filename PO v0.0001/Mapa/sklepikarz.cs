@@ -9,6 +9,7 @@ namespace PO_v0._0001
 {
     public class sklepikarz
     {
+        ///klasa odpowiadająca za kupywanie
         private List<string> lista = new List<string>();
 
         public sklepikarz()
@@ -29,6 +30,7 @@ namespace PO_v0._0001
 
             while (true)
             {
+                //rysowanie sklepu i statystyk
                 Console.WriteLine("+================================+");
                 for (int i = 0; i < lista.Count; i++)
                 {
@@ -41,7 +43,7 @@ namespace PO_v0._0001
                 }
                 
                 Statystki.show_stat(P.postac);
-
+                //poruszanie sie po menu
                 var a= Console.ReadKey();
                 switch (a.Key)
                 {
@@ -58,9 +60,11 @@ namespace PO_v0._0001
                             strzałka++;
                         }
                         break;
+                        //wybieranie opcji i zmianna statystyk oraz stanu złota
                     case ConsoleKey.Enter:
                         switch (strzałka)
                         {
+                            
                             case 0:
                                 if (P.postac.gold.value >= 50)
                                 {

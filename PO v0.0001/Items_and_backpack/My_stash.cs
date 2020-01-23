@@ -2,6 +2,7 @@
 
 namespace PO_v0._0001
 {
+    // plecak, miał być to ekwipunek gracza, aktualnie nie wykorzystywany
     public class My_stash//ekwipunek
     {
         List<Item> _backpack;

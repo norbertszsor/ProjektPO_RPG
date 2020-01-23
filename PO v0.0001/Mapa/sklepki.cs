@@ -8,6 +8,7 @@ namespace PO_v0._0001
 {
     class sklepki:Level
     {
+        //klasa do generowania poziomu sklepu
         public MapElement[,] mapa_Elementy;
 
         public void generuj()

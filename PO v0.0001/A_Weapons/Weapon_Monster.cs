@@ -1,5 +1,5 @@
 ﻿namespace PO_v0._0001
-{
+{//classa broni z powodu braku czasu nie dodane
     class Weapon_Monster : Weapon // test
     {
         public Weapon_Monster()

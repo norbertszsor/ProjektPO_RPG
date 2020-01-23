@@ -4,6 +4,7 @@
     {
         static public void lvluj(Character character,double  pending_exp)
         {
+            //metoda do lvl postaci, przypisuje określnoe statystyki zależnie od klasy.
             character.expirience = character.expirience + pending_exp;
             
             if(character.expirience>character.lvl*100)

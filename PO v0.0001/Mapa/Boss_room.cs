@@ -9,7 +9,7 @@ namespace PO_v0._0001
     class Boss_room:Level
     {
         public MapElement[,] mapa_Elementy;
-
+        //tworzy mape elementów komnaty z bossem
         public void generuj()
         {
             this.mapa_Elementy = new MapElement[3, 10];

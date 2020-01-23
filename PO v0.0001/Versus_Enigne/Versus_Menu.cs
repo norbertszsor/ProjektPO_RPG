@@ -4,6 +4,7 @@ namespace PO_v0._0001
 {
     public static class Versus_Menu
     {
+        //metoda wyświetlania menu i tworzenia postaci aż do wygenerowanie właśiwej mapy
         public static Character Menu()
         {
 
@@ -275,12 +276,12 @@ namespace PO_v0._0001
                 Console.WriteLine("+===============================================================+");
                 Console.WriteLine("|                                                               |");
                 Console.WriteLine("|  Byłeś zwykłym synem wieśniaka, aż do dzisiaj kiedy stoisz    |");
-                Console.WriteLine("|  przed dziwnymi wrotami, które prowadzą w nieznaną do tąd     |");
-                Console.WriteLine("|  pustkę w podziemiach, twoje życie było nudne i pełne pracy   |");
-                Console.WriteLine("|  w polu, teraz nadzszedł czas na twoją przygodę, podchodzisz  |");
-                Console.WriteLine("|  do dziwnych wrót które wydają się być ciepłe w dotyku        |");
+                Console.WriteLine("|  przed dziwnymi wrotami, które prowadzą w nieznaną pustkę     |");
+                Console.WriteLine("|  w podziemiach, twoje życie było nudne i pełne pracy w polu   |");
+                Console.WriteLine("|  teraz nadzszedł czas na twoją przygodę! Podchodzisz niepewnie|");
+                Console.WriteLine("|  do dziwnych wrót, które wydają się być ciepłe w dotyku,      |");
                 Console.WriteLine("|  nagle słyszysz dzwięk, który rozlewa się po twoim wnętrzu    |");
-                Console.WriteLine("|                                                               |");
+                Console.WriteLine("|                  Dziwne wrota przemówiły:                     |");
                 Console.WriteLine("|                   >WYBIERZ SWOJĄ KLASĘ<                       |");
                 Console.WriteLine("+===============================================================+");
                 Console.ReadKey();

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace PO_v0._0001
 {
+    //różne elemnty mapy i ich ikony(specjalne przypadki to przeciwnicy i Npc którzy mają dodatkowe pole
 
     public class MapElement
     {

@@ -3,6 +3,7 @@ using System.Threading;
 
 namespace PO_v0._0001
 {
+    //medoa która pozwala podjąć próbę ucieczki z walki
     static class Versus_escape
     {
 

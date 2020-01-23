@@ -4,6 +4,7 @@ namespace PO_v0._0001
 {
     static class Statystki
     {
+        //zestaw statycznych metod wyświetlających dane o bochaterze w różnych miejscach gry
         public static void show_spec_stat(Character _character)
         {
             string ramka  = "+============================+\n";

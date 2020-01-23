@@ -139,7 +139,7 @@ namespace PO_v0._0001
         }
 
 
-
+        //fuckcja ułatwiająca manipulowanie mapą i jej sprawdzanie
         public List<MapElement> Zwroc_Sasiadow(MapElement n)
         {
             var x = n.x;
@@ -245,7 +245,7 @@ namespace PO_v0._0001
         }
 
 
-
+        //wyświetla komunikatu np. o otrzyamnym złoscie
         public void showEvent()
         {
             Console.WriteLine(message);
@@ -254,7 +254,7 @@ namespace PO_v0._0001
 
         public void show()
         {
-            //kontrola Eventów
+            //kontrola Eventów....zajmowanie sie interakcją między graczem oraz mapą(wywołuje mechaniki walki oraz sklepu) 
             switch (mapa_Elementy[bohater.x, bohater.y])
             {
                 case Exit e:
@@ -292,7 +292,7 @@ namespace PO_v0._0001
                 default:
                     break;
             }
-            //rysowanie
+            //rysowanie mapy
             for (int i = 0; i < mapa_Elementy.GetLength(1); i++)
                 {
                     for (int j = 0; j < mapa_Elementy.GetLength(0); j++)

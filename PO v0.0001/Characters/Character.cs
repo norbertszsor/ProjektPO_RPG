@@ -1,5 +1,6 @@
 ﻿namespace PO_v0._0001
 {
+    // klasa charakter bazowa klasa na której podstawie powstają bohaterowaie danych klas i przeciwnicy
     public class Character
     {
         public double expirience;

@@ -1,5 +1,6 @@
 ﻿namespace PO_v0._0001
 {
+    //klasa bohatera
     public class Mage : Character
     {
     

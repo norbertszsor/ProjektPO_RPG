@@ -4,7 +4,7 @@ namespace PO_v0._0001
 {
     static class Versus_Show
     {
-       
+       //metodwa wyświetlania okna walki
         public static void test_show(Character player,Character _enemy)
         {
            

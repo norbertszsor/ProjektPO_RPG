@@ -14,7 +14,7 @@ namespace PO_v0._0001
 
 
 
-
+            //uruchamianie gry
             Map mapa = new Map(30, 15, Versus_Menu.Menu());
             mapa.generuj();
 

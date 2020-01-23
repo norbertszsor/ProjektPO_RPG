@@ -8,6 +8,7 @@ namespace PO_v0._0001
 {
     interface Level
     {
+        //interfejs class generujących mapy;
         void generuj();
     }
 }
