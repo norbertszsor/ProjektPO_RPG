@@ -10,3 +10,9 @@ C:\Users\Crow\Documents\GitHub\ProjektPO_RPG\PO v0.0001\bin\Debug\PO v0.0001.pdb
 C:\Users\Crow\Documents\GitHub\ProjektPO_RPG\PO v0.0001\obj\Debug\PO v0.0001.csprojAssemblyReference.cache
 C:\Users\Crow\Documents\GitHub\ProjektPO_RPG\PO v0.0001\obj\Debug\PO v0.0001.exe
 C:\Users\Crow\Documents\GitHub\ProjektPO_RPG\PO v0.0001\obj\Debug\PO v0.0001.pdb
+C:\Users\Crow\Desktop\ProjektPO_RPG-norbert\ProjektPO_RPG-norbert\PO v0.0001\obj\Debug\PO v0.0001.csprojAssemblyReference.cache
+C:\Users\Crow\Desktop\ProjektPO_RPG-norbert\ProjektPO_RPG-norbert\PO v0.0001\obj\Debug\PO v0.0001.exe
+C:\Users\Crow\Desktop\ProjektPO_RPG-norbert\ProjektPO_RPG-norbert\PO v0.0001\obj\Debug\PO v0.0001.pdb
+C:\Users\Crow\Desktop\ProjektPO_RPG-norbert\ProjektPO_RPG-norbert\PO v0.0001\bin\Debug\PO v0.0001.exe.config
+C:\Users\Crow\Desktop\ProjektPO_RPG-norbert\ProjektPO_RPG-norbert\PO v0.0001\bin\Debug\PO v0.0001.exe
+C:\Users\Crow\Desktop\ProjektPO_RPG-norbert\ProjektPO_RPG-norbert\PO v0.0001\bin\Debug\PO v0.0001.pdb

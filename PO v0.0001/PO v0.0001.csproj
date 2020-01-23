@@ -45,9 +45,16 @@
   <ItemGroup>
     <Compile Include="A_Weapons\Weapon.cs" />
     <Compile Include="A_Weapons\Weapon_Monster.cs" />
+    <Compile Include="Mapa\Boss_room.cs" />
+    <Compile Include="Mapa\Level.cs" />
+    <Compile Include="Mapa\Map.cs" />
     <Compile Include="Monsters\Enemy_Boss.cs" />
+    <Compile Include="Mapa\Player.cs" />
+    <Compile Include="Mapa\Point.cs" />
     <Compile Include="Show_statystyki\lvl_up.cs" />
     <Compile Include="Show_statystyki\Statystki.cs" />
+    <Compile Include="Mapa\sklepikarz.cs" />
+    <Compile Include="Mapa\sklepki.cs" />
     <Compile Include="Versus_Enigne\Versus_calculate.cs" />
     <Compile Include="Versus_Enigne\Versus_enemy.cs" />
     <Compile Include="Versus_Enigne\Versus_escape.cs" />
@@ -59,8 +66,6 @@
     <Compile Include="Characters\Character.cs" />
     <Compile Include="Monsters\Enemy.cs" />
     <Compile Include="Characters\Mage.cs" />
-    <Compile Include="Mapa\Map.cs" />
-    <Compile Include="Mapa\Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Characters\Rouge.cs" />
@@ -68,6 +73,7 @@
     <Compile Include="A_Weapons\Weapon_Warrior.cs" />
     <Compile Include="A_Weapons\Weapon_Mage.cs" />
     <Compile Include="A_Weapons\Weapon_Rouge.cs" />
+    <Compile Include="Versus_Enigne\Versus_Menu.cs" />
     <Compile Include="Versus_Enigne\Versus_Show.cs" />
   </ItemGroup>
   <ItemGroup>

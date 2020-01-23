@@ -6,25 +6,18 @@ using System.Threading.Tasks;
 
 namespace PO_v0._0001
 {
-    public class Point
-    {
-        public int x;
-        public int y;
-        public Point(int x, int y)
-        {
-            this.x = x;
-            this.y = y;
-        }
-    }
-    public class MapElement : Point
+
+    public class MapElement
     {
 
         public char icon;
-        public string position;
+        public int x;
+        public int y;
 
-        public MapElement(int x, int y) : base(x, y)
+        public MapElement(int x, int y)
         {
-
+            this.x = x;
+            this.y = y;
         }
     }
     public class Grass : MapElement
@@ -32,16 +25,30 @@ namespace PO_v0._0001
 
         public Grass(int x, int y) : base(x, y)
         {
-            this.icon = '.';
+            icon = '.';
 
         }
     }
     public class Rock : MapElement
     {
 
-<<<<<<< Updated upstream
         public Rock(int x, int y) : base(x, y)
-=======
+        {
+            icon = '█';
+        }
+    }
+
+    public class Exit : MapElement
+    {
+
+        public Exit(int x, int y) : base(x, y)
+        {
+            icon = '░';
+        }
+    }
+    public class Chest : MapElement
+    {
+
         public Chest(int x, int y) : base(x, y)
         {
             icon = '☼';
@@ -76,11 +83,8 @@ namespace PO_v0._0001
     {
         public sklepikarz Sklepikarz=new sklepikarz();
         public NPC(int x, int y) : base(x, y)
->>>>>>> Stashed changes
         {
-            this.icon = 'R';
+            icon = '$';
         }
-
-       
     }
 }
