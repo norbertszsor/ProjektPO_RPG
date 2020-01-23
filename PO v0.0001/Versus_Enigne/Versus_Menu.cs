@@ -282,7 +282,7 @@ namespace PO_v0._0001
                 Console.WriteLine("|  nagle słyszysz dzwięk, który rozlewa się po twoim wnętrzu    |");
                 Console.WriteLine("|                                                               |");
                 Console.WriteLine("|                   >WYBIERZ SWOJĄ KLASĘ<                       |");
-                Console.WriteLine("+===============================================================|");
+                Console.WriteLine("+===============================================================+");
                 Console.ReadKey();
                 Console.Clear();
             }
